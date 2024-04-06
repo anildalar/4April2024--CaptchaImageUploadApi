@@ -9,5 +9,10 @@ class UploadedImage(models.Model):
     uploaded_at = models.DateTimeField(auto_now_add=True)
     pass
 
+class CaptchaTask(models.Model):
+    task_id = models.CharField(max_length=100, unique=True)
+    status = models.CharField(max_length=20)
+    result = models.TextField(blank=True, null=True)
+
 
 
