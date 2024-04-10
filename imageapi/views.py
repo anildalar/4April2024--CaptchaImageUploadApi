@@ -10,8 +10,6 @@ import threading
 import time
 import os
 
-
-
 @csrf_exempt
 def get_captcha_task(request, task_id):
     if request.method == 'GET':
